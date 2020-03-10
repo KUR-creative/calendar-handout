@@ -23,16 +23,16 @@ for line_y in range(59):
         inner_line = "".join(F.map(lambda d: d + " " * 15 + "study |", week))
         s = "|" + inner_line
         row_y += 1
-    elif in_box_y == 1: s = "|" + (         " " * 26 + "|") * 7;
-    elif in_box_y == 2: s = "|" + ("w-up" + " " * 22 + "|") * 7;
-    elif in_box_y == 3: s = "|" + (         " " * 26 + "|") * 7;
-    elif in_box_y == 4: s = "|" + ("weig" + " " * 16 + "paper " + "|") * 7;
-    elif in_box_y == 5: s = "|" + (         " " * 26 + "|") * 7;
-    elif in_box_y == 6: s = "|" + ("exer" + " " * 22 + "|") * 7;
-    elif in_box_y == 7: s = "|" + (         " " * 26 + "|") * 7;
-    elif in_box_y == 8: s = "|" + ("diet" + " " * 16 + " proj " + "|") * 7;
-    elif in_box_y == 9: s = "|" + (         " " * 26 + "|") * 7;
-    elif in_box_y ==10: s = "|" + (" bed" + " " * 22 + "|") * 7;
+    elif in_box_y == 1: s = "|" + (         " " * 26            + "|") * 7;
+    elif in_box_y == 2: s = "|" + ("w-up" + " " * 16 + "paper " + "|") * 7;
+    elif in_box_y == 3: s = "|" + (         " " * 26            + "|") * 7;
+    elif in_box_y == 4: s = "|" + ("weig" + " " * 16 + " data " + "|") * 7;
+    elif in_box_y == 5: s = "|" + (         " " * 26            + "|") * 7;
+    elif in_box_y == 6: s = "|" + ("exer" + " " * 16 + "nnlab " + "|") * 7;
+    elif in_box_y == 7: s = "|" + (         " " * 26            + "|") * 7;
+    elif in_box_y == 8: s = "|" + ("diet" + " " * 16 + " icom " + "|") * 7;
+    elif in_box_y == 9: s = "|" + (         " " * 26            + "|") * 7;
+    elif in_box_y ==10: s = "|" + (" bed" + " " * 6  + " etc            "   + "|") * 7;
     elif in_box_y ==11: s = horizontal_line
     print(s);         
 print(horizontal_line)
