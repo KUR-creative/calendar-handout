@@ -10,8 +10,10 @@ print(horizontal_line)
 
 # 2020/3
 cal = Calendar()
-dates = list(cal.itermonthdates(2020,3))[7:]
-assert len(dates) == 35
+#dates = list(cal.itermonthdates(2020,3))[7:]
+dates = list(cal.itermonthdates(2020,5))[28:] + list(cal.itermonthdates(2020,6))[:28]
+#dates = list(cal.itermonthdates(2020,6))#[7:]
+#assert len(dates) == 35
 date_strs = F.lmap(lambda d: d.strftime("%m/%d"), dates)
 weeks = F.lpartition(7, date_strs)
 
